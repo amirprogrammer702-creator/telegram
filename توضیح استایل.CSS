@@ -1,0 +1,231 @@
+        /*
+انواع استایل دهی 
+1 به صورت این لاین در داخل تگ ها با کمک اتربیوتی به نام استایل نوشته می شود 
+2 به صورت اینترنال که در بین تگ  باز و بسته  هد قرار میگیرد کافی است یک تگ استایل بین شون ایجاد کنیم تا استایل مورد نظر رو به صفحه مون بدیم 
+3 به صورت اکسترنال که با یک فایل سی اس اس به تمام صفحهات سایت دسترسی پیدا میکنیم و یک استایل جدا از فایل اچ تی ام ال مون داریم */
+
+/*
+    selector{
+    property: value ;
+    */
+/*  در اکسترنال به این شکل استایل میدهند و یا باید ایدی بدیم به تگ مون یا از اتربیوت کلاس استفاده کینم یا باید اسم خود همون تگ رو بزاریم */
+/*ولی مشکل اینجاست که ما نمی تونیم به تگ هامو یک ایدی یکسان بدیم چون این موضوع برای ایدی جواب گو نیست 
+ولی در کلاس به این شکل نیست و ما می تونیم به هر تگی کلاس یکسان بدیم مثل این مثال ها  یا اگه خواستیم به یک تگ استایل بدیم باید اسم اون تگ رو بنویسیم و
+ اگه ایدی بود بهش یه شارپ بدیم و یا  کلاس بود بهش دات بدیم و اون مقداری که برای انها تعیین رو بزاریم */
+/*ما می تونیم در داخل تگ و اتربیوت کلاس هر چقدر به کارمون است از مقدار های متفاوت استفاده کنیم */
+/* ما یک موضوعی داریم به نام یونیورسال سلکتور چیکار میکنه ما 
+ اگر داخلش هر پراپرتی ایجاد کنیم به تمام المنت ها مون که در صفحه کار کردیم اون استایل رو میده */
+/*گاهی ما به جای اینکه برای هر تگ ایدی بدیم یا اسم شو بنویسم داخل استایل می تونیم با استفاده از گاما یا همون و خودمون استفاده کنیم
+  و دیگه برای هر تعدا تگ یک پراپرتی یکسان دارند */
+/* کامنت کردن در سی اس اس به همین شکل است که من دارم انجام میدم و یک توضیح هاتی برای تگ هام یا سیلکتر هام دارم */
+* {
+    background-color: rgb(43, 43, 128);
+}
+
+h1 {
+    color: red;
+}
+
+#d1 {
+    color: yellow;
+}
+
+.c1 {
+    color: rgb(0, 218, 91);
+}
+
+p.c2 {
+    color: purple;
+    font-size: 30px;
+}
+
+h3#d3 {
+    color: deeppink;
+}
+
+h1#d2 {
+    color: brown;
+    font-size: 60px;
+}
+
+.c3 {
+    font-size: 60px;
+    font-family: sans-serif;
+}
+
+h1.c4,
+p#d4 {
+    color: rgb(14, 190, 190);
+}
+
+div p {
+    color: red;
+}
+
+#d5 p {
+    color: gold;
+}
+
+/*--استایل های متفاوت برای  تگ هامون 
+پراپرتی کالر برای رنگ اون نوشته است 
+و فونت سایز برای سایز فونت مون است 
+و فونت ویت با مقدار نرمال برای اینکه اون تگه مثل اچ وان که از اول بولد است رو عادی میکند 
+پراپرتی دایرکشن برای راست به چپ کردن و بر عکس 
+تیکست دایرکشن با مقدار اندر لاین یک خط زیرش تولید میکند  و با مقدار های متفاوت به شکل دیگر است--*/
+#d6 {
+    color: deeppink;
+    font-size: 20px;
+    font-weight: normal;
+    direction: rtl;
+    text-decoration: underline;
+    letter-spacing: 20px;
+    text-transform: lowercase;
+    text-shadow: 2px 2px 5px #db9600;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#d7 {
+    color: chocolate;
+    font-size: 200%;
+    font-weight: bold;
+    text-decoration: line-through;
+    word-spacing: 20px;
+    line-height: 50px;
+    text-transform: capitalize;
+
+    /*text-transform: uppercase; */
+    /*
+    text-decoration: none;
+    text-decoration: overline;
+    text-decoration: underline;
+   */
+}
+
+/*----*/
+a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+h1#d8 {
+    /*
+    color: #db9600;
+    color: rgb(35,196, 196);
+    */
+    color: rgba(55, 200, 144, 0.6);
+    border: 8px solid yellow;
+    outline: 7px solid rgb(0, 255, 55);
+    border-radius: 70px;
+    /*
+    border: 4px dashed yellowgreen;
+    border: 7px dotted gold;
+    border: 5px double rgb(20, 255, 32);
+    */
+}
+
+img {
+    height: 220px;
+    width: 200px;
+    border-radius: 20px;
+    border: 5px solid rgb(0, 238, 255);
+
+}
+
+span {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 15px;
+    border: 6px solid rgb(26, 88, 13);
+    margin: 200px;
+}
+
+#d9 {
+    width: 300px;
+    height: 200px;
+    background-color: yellow;
+    border: 6px solid red;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    /* این پراپرتی  مقدار رو کمتر از مقداری که بوده میکنه */
+    /*
+    padding-top: 10px;
+    padding-left:...px % em rem ;
+    padding-bottom:... ;
+    padding-right:... ;
+    padding: 10px 10px 20px 30px این به صورت ساعت گرد است
+    همه این تاپ و لیفت و غیره برای مارجین و بردر جواب میدهند و برای بردر ریدیوز هم جواب میده
+    */
+}
+
+h1.cp1 {
+
+    text-align: center;
+    background-color: rgb(224, 213, 213);
+    /*
+        text-align: left;
+        text-align: right;*/
+}
+
+#d10 {
+    background-color: crimson;
+    text-align: center;
+}
+
+a {
+    color: green;
+    display: block;
+    text-align: center;
+    /*
+    display: inline;
+    display: inline-block;
+    */
+}
+
+#s1 {
+    background-color: red;
+    border: 1px solid gold;
+    display: inline;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+#s2 {
+    background-color: red;
+    border: 1px solid gold;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+a.o1 {
+    color: aliceblue;
+    background-color: aqua;
+    display: inline-block;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*  توضیح سیلکتور کلاس اولیش که گفتم لینک بود تا وقتی رو دکمه نرفیم
+ رنگ اش عوض نمیشه ویزیتید هم مثل همون است عمل کردش ولی ای هاور متفاوت است وقتی میری روی دکمه یه حالت دیگری دارد و رنگ اون دکمه عوض میشه */
+/*
+a:link{
+    color: rgb(83, 43, 226);
+}
+    */
+/*
+    a:visited{
+        color: #000;
+    }
+        */
+a:hover {
+    color: chocolate;
+    background-color: blue;
+}
